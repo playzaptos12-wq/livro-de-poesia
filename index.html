@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ecos do Olimpo - Livro de Poesia</title>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&amp;family=Noto+Sans:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#7317cf",
+                        "accent-gold": "#d4af37",
+                        "background-light": "#f7f6f8",
+                        "background-dark": "#0f0814",
+                        "surface-dark": "#1a1122",
+                    },
+                    fontFamily: {
+                        "display": ["Noto Serif", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"],
+                    },
+                    backgroundImage: {
+                        'hero-gradient': 'linear-gradient(to bottom, rgba(15, 8, 20, 0.3), rgba(15, 8, 20, 1))',
+                        'card-gradient': 'linear-gradient(to top, rgba(15, 8, 20, 0.9), rgba(15, 8, 20, 0))',
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f0814;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #362447;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7317cf;
+        }
+        .text-shadow-sm {
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+        }
+        .gold-border {
+            border: 1px solid transparent;
+            border-image: linear-gradient(to right, transparent, #d4af37, transparent) 1;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-white font-display overflow-x-hidden transition-colors duration-300">
+<!-- Navbar -->
+<nav class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-background-dark/80 backdrop-blur-md border-b border-[#362447]">
+<div class="layout-container flex justify-center w-full">
+<div class="w-full max-w-[1200px] px-6 py-4 flex items-center justify-between">
+<div class="flex items-center gap-3 text-white">
+<span class="material-symbols-outlined text-accent-gold text-3xl">account_balance</span>
+<h2 class="text-white text-xl font-bold tracking-wider uppercase">Ecos do Olimpo</h2>
+</div>
+<div class="hidden md:flex items-center gap-8">
+<a class="text-gray-300 hover:text-accent-gold text-sm font-medium tracking-wide transition-colors" href="#obra">A Obra</a>
+<a class="text-gray-300 hover:text-accent-gold text-sm font-medium tracking-wide transition-colors" href="#autor">O Autor</a>
+<a class="text-gray-300 hover:text-accent-gold text-sm font-medium tracking-wide transition-colors" href="#galeria">Galeria</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="hidden sm:flex cursor-pointer items-center justify-center rounded-sm border border-accent-gold/50 px-6 py-2 bg-transparent text-accent-gold hover:bg-accent-gold hover:text-background-dark transition-all duration-300 text-sm font-bold tracking-widest uppercase">
+                        Ler Amostra
+                    </button>
+<!-- Mobile Menu Icon -->
+<button class="md:hidden text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<section class="relative min-h-screen flex items-center justify-center overflow-hidden">
+<!-- Background Image with Parallax-like feel -->
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-hero-gradient z-10"></div>
+<div class="w-full h-full bg-cover bg-center bg-no-repeat bg-fixed opacity-60 transform scale-105" data-alt="Dramatic close-up of a classical greek sculpture face in shadow" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBFCKnvs22k4sySpJds9Ir6vd_lFLasODhk0X24-h7qxxW24Rh_q9Tig1eyPgHlWdVuAUpGKU3Hzf5dj7gze3o_2Cc-MB0b_B1z-w1bg4ej5S6FfusNpiTM9IR2_IapsU_MZpd949nyI040xCPqCcQSFsESMJfLklyE9FVdLzEtl-DMNmHYNpsMhK_mTLy9JolVsYzmaB6ncIXX9TRBppKkDEebYSTobqeHfHrUApAPPvNflebW4WtL4zyfLEWssoaP2okjthBKLksC');">
+</div>
+</div>
+<div class="relative z-20 flex flex-col items-center justify-center text-center px-4 pt-20 max-w-4xl mx-auto">
+<div class="mb-6 opacity-0 animate-[fadeIn_1s_ease-out_forwards]">
+<span class="text-accent-gold tracking-[0.2em] text-sm uppercase border-b border-accent-gold pb-1">Poesia Clássica Contemporânea</span>
+</div>
+<h1 class="text-5xl md:text-7xl lg:text-8xl font-black text-white mb-6 leading-tight tracking-tight text-shadow-sm opacity-0 animate-[fadeIn_1s_ease-out_0.3s_forwards]">
+                Ecos do <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-primary">Olimpo</span>
+</h1>
+<div class="flex items-center justify-center gap-4 w-full opacity-0 animate-[fadeIn_1s_ease-out_0.6s_forwards]">
+<div class="h-[1px] w-12 bg-accent-gold"></div>
+<h2 class="text-xl md:text-2xl text-gray-200 font-light italic">Alexandre Valente</h2>
+<div class="h-[1px] w-12 bg-accent-gold"></div>
+</div>
+<p class="mt-8 text-lg text-gray-300 max-w-2xl leading-relaxed opacity-0 animate-[fadeIn_1s_ease-out_0.9s_forwards]">
+                Uma jornada lírica através dos séculos, onde o mármore frio encontra o calor da paixão humana e os segredos dos deuses sussurram ao ouvido dos mortais.
+            </p>
+<div class="mt-12 flex flex-col sm:flex-row gap-6 opacity-0 animate-[fadeIn_1s_ease-out_1.2s_forwards]">
+<button class="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-bold tracking-wide uppercase shadow-[0_0_20px_rgba(115,23,207,0.4)] transition-all hover:shadow-[0_0_30px_rgba(115,23,207,0.6)] hover:-translate-y-1">
+                    Adquirir a Obra
+                </button>
+<button class="flex items-center justify-center gap-2 text-white hover:text-accent-gold transition-colors font-medium">
+<span class="material-symbols-outlined">play_circle</span>
+                    Assistir ao Booktrailer
+                </button>
+</div>
+<!-- Scroll Indicator -->
+<div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce opacity-50">
+<span class="material-symbols-outlined text-white text-3xl">keyboard_arrow_down</span>
+</div>
+</div>
+</section>
+<!-- Feature / Quote Section -->
+<section class="relative py-24 px-6 bg-background-dark border-t border-[#362447]" id="obra">
+<div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div class="relative group">
+<div class="absolute -inset-2 bg-gradient-to-r from-primary to-accent-gold rounded-xl blur opacity-20 group-hover:opacity-40 transition duration-1000"></div>
+<div class="relative aspect-[3/4] rounded-lg overflow-hidden shadow-2xl">
+<div class="w-full h-full bg-cover bg-center" data-alt="Ancient stone columns and ruins under a mystical sky" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAv6ZBYf2vjbWIrGC8SSdygRJavdZerrVBowUstQ4QHsVdrbwMZcxiMR71qTkkEFUDejMgkbP10HnBvnnq1exwcp8kTONHHDdp8uXFuR4xEtR4u4zo38Gzfz9CPwyLETdmf9gGKhChxwmSY3cfXqpzJBy-cNd6BrtebFF07q1WXnq37NxEqT2fRtjWagCHrkCKhglLAjGUbsk7_8UviFFc_tICik-p3PMipfNqsyaMurc2qyJ1HKZZhWTOIe8SEuRdI5gJZbPaJl6K');"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-transparent to-transparent opacity-60"></div>
+</div>
+</div>
+<div class="flex flex-col gap-8">
+<div class="flex items-center gap-3">
+<span class="h-[2px] w-10 bg-primary"></span>
+<span class="text-accent-gold uppercase tracking-widest text-sm font-bold">Fragmentos da Alma</span>
+</div>
+<h2 class="text-3xl md:text-5xl font-bold text-white leading-tight">
+                    "O tempo esculpe a pedra,<br/>
+                    mas o verso esculpe o <span class="text-primary italic">eterno</span>."
+                </h2>
+<p class="text-gray-400 text-lg leading-relaxed font-light">
+                    Em <i>Ecos do Olimpo</i>, Alexandre Valente convida o leitor a caminhar pelos corredores esquecidos da história. Cada poema é uma escultura em palavras, talhada com a precisão de um mestre e a emoção de um amante. 
+                </p>
+<p class="text-gray-400 text-lg leading-relaxed font-light">
+                    Das sombras dos castelos medievais aos picos nevados da mitologia, descubra uma antologia que desafia o silêncio dos séculos.
+                </p>
+<div class="pt-4">
+<a class="inline-flex items-center gap-2 text-accent-gold hover:text-white transition-colors border-b border-accent-gold pb-1 font-medium" href="#">
+                        Ler trechos selecionados
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Image Grid / Gallery -->
+<section class="py-24 bg-surface-dark relative" id="galeria">
+<!-- Decorative elements -->
+<div class="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-[#362447] to-transparent"></div>
+<div class="max-w-[1200px] mx-auto px-6">
+<div class="text-center mb-16">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">auto_awesome</span>
+<h2 class="text-3xl md:text-4xl font-bold text-white mb-4">A Galeria dos Sonhos</h2>
+<p class="text-gray-400 max-w-2xl mx-auto">Imagens que inspiraram os versos mais profundos da obra.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+<!-- Card 1 -->
+<div class="group relative rounded-lg overflow-hidden cursor-pointer md:col-span-1 border border-[#362447] hover:border-primary/50 transition-all duration-300">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Detail of a white marble statue hand holding fabric" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD8nXq8YUapAjopFJjC4lbuo_t4Ovq1Ymm-9WeqzFSUZ2Ltaft3HiRChq3WhsxEtk-2uUNieh6QRdzWUs1Y4dR9XcXvfwn0yk-SoauCwK4mqEGPb5fq6whR91-F_bRiFMrpT6092UWD1nXp8oMIwb6Zs1WEXa-WN_07F9qgzQyhdNlEizf8EP10F2NjFkuK0WnNEC2Kil8Yagd37GwboRg93Tc7GaAWKMd6rAGkbkijOBC6zOjOdUaZhq6Q5jpOkOjpaauVubve8sx7');">
+</div>
+<div class="absolute inset-0 bg-card-gradient opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
+<h3 class="text-white text-xl font-bold mb-1">A Voz do Mármore</h3>
+<p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity delay-100">Soneto III</p>
+</div>
+</div>
+<!-- Card 2 (Larger) -->
+<div class="group relative rounded-lg overflow-hidden cursor-pointer md:col-span-2 border border-[#362447] hover:border-primary/50 transition-all duration-300">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Interior of an old opera house with golden balconies" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCCoValv0xnjWBTY36_EjodlBLYAf4nXjZyp4BVQc5DgQo3Mg9GcfRG8Nn8_udRBbXO9Rny9i_H4XDmUiY9KsAkK5yCsrL-NGL0h6QYbj5XpfnYbJwKqAlZp892n4XkxJ-ctlyBD69H-3zLxxz8J553aNlZEY1iROjECcFI5Jny0FIugdY_o6tlvP3tfmQPImM4Bc69SOP1hh2p0PtPEVXusYg0HJ8rBypJrqEB1Z98fVaDxUbRj0SbdWoA1geL28tM9J8plkf1RrEn');">
+</div>
+<div class="absolute inset-0 bg-card-gradient opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
+<h3 class="text-white text-xl font-bold mb-1">Canto da Sereia</h3>
+<p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity delay-100">Ode à Música</p>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative rounded-lg overflow-hidden cursor-pointer md:col-span-1 border border-[#362447] hover:border-primary/50 transition-all duration-300">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Foggy silhouette of a castle turret at twilight" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDOB9nKhz-COkVMts2M8PcfqEhuealR09Quf4Pf-r3A2sEfvL1ulNeW8QIoeE14W-_oJkwDrK-E5QVepRopdO6gsIu3nCWBY6bgsG_KMCizAG5kGNmKf5DT-vvzJPs51ZvoVpuaogSOj2HREV50a_F8PE23yYYPtIq6LQprQGbRlV-yVrm07-M3Mp8r_u9-4SprbfFcarDC06rpF_VmLGxuMIWmreAo1tTcwNs3bCWBEvLNpWOOqK3f3zM0eQLq5EMdGd6OusklsPod');">
+</div>
+<div class="absolute inset-0 bg-card-gradient opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
+<h3 class="text-white text-xl font-bold mb-1">Sombras do Castelo</h3>
+<p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity delay-100">Balada Noturna</p>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative rounded-lg overflow-hidden cursor-pointer md:col-span-2 border border-[#362447] hover:border-primary/50 transition-all duration-300">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="Close up of old textured paper with quill pen" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA2AZMf_xWXeltzkGxAhdqIQKrtKk3C-VMPdhjJ164gTsy7xkcTYHWazdiiL-HDx9IwEZBxKGUbvd2RR2zdH-nbxnFpo-4orH8VIqauWjO6XhGDAJmkPIMdTZysu1-G17o26HuPHYCZiLtusJfXhYV1d0fwh1G2xMSJNpIYXwsFTAhkTb__qqGyQZge2AyplPOmnozKz1fqcuunPevdSM30vSfFzIWqcRbb4I3GV20LveHuC1gry5cj0DCRhl1HpNjK5x1QkSHogkp-');">
+</div>
+<div class="absolute inset-0 bg-card-gradient opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute bottom-0 left-0 p-6 translate-y-2 group-hover:translate-y-0 transition-transform">
+<h3 class="text-white text-xl font-bold mb-1">Manuscritos Perdidos</h3>
+<p class="text-gray-300 text-sm opacity-0 group-hover:opacity-100 transition-opacity delay-100">Versos Inéditos</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Author Section -->
+<section class="py-24 bg-background-dark border-t border-[#362447]" id="autor">
+<div class="max-w-4xl mx-auto px-6">
+<div class="flex flex-col md:flex-row items-center gap-12 bg-surface-dark p-8 rounded-2xl border border-[#362447]">
+<div class="w-48 h-48 md:w-64 md:h-64 flex-shrink-0 relative">
+<div class="absolute inset-0 rounded-full border-2 border-accent-gold/30 rotate-6 transform scale-105"></div>
+<div class="w-full h-full rounded-full overflow-hidden border-4 border-surface-dark shadow-xl">
+<div class="w-full h-full bg-cover bg-center" data-alt="Portrait of the author looking thoughtful in a dark suit" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCIarLOBTW574i-XOwQ6CyfFduV5M8POmp-w7rvXtVcj0MnI2o3t1GkIchd760xEH3mVAQMAy9fsA1cEnd9-LOlvAbVBQNc9p84VejnE0F4-1AzQmbM-9igoGAjOrynC9VWYbCUdGHtrXGZenViYMk-c3aLjWsY_9NT-2pq9MXvIwN5f1_COcEeX5dSzNvd24Z9rfSo6eHdBWsYKSwyGaeWwBRnqp3gAp-miLW3aQWw29CPh2ht810d44d_xyE6IIDduCrlm10u6xkl');">
+</div>
+</div>
+</div>
+<div class="flex-1 text-center md:text-left">
+<h2 class="text-3xl font-bold text-white mb-2">Sobre o Autor</h2>
+<p class="text-accent-gold font-medium mb-6">Alexandre Valente</p>
+<p class="text-gray-300 leading-relaxed mb-6">
+                        Poeta, historiador e amante das artes clássicas, Alexandre dedica sua vida a reviver a grandiosidade dos mitos antigos através da poesia moderna. "Ecos do Olimpo" é sua terceira publicação e sua obra mais ambiciosa até o momento.
+                    </p>
+<div class="flex justify-center md:justify-start gap-4">
+<a class="w-10 h-10 rounded-full bg-background-dark border border-[#362447] flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-background-dark border border-[#362447] flex items-center justify-center text-gray-400 hover:text-primary hover:border-primary transition-all" href="#">
+<span class="material-symbols-outlined text-lg">alternate_email</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-[#0a050d] border-t border-[#362447] pt-16 pb-8">
+<div class="max-w-5xl mx-auto px-6 flex flex-col items-center text-center">
+<div class="mb-8">
+<span class="material-symbols-outlined text-accent-gold text-5xl mb-2">account_balance</span>
+<h3 class="text-2xl text-white font-bold tracking-widest uppercase">Ecos do Olimpo</h3>
+</div>
+<div class="flex flex-wrap justify-center gap-8 mb-10 text-gray-400">
+<a class="hover:text-accent-gold transition-colors" href="#">Imprensa</a>
+<a class="hover:text-accent-gold transition-colors" href="#">Termos de Uso</a>
+<a class="hover:text-accent-gold transition-colors" href="#">Política de Privacidade</a>
+<a class="hover:text-accent-gold transition-colors" href="#">Contato</a>
+</div>
+<div class="flex gap-6 mb-10">
+<a class="text-gray-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl">photo_camera</span>
+</a>
+<a class="text-gray-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl">chat_bubble</span>
+</a>
+<a class="text-gray-500 hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined text-3xl">menu_book</span>
+</a>
+</div>
+<p class="text-gray-600 text-sm">
+                © 2024 Alexandre Valente. Todos os direitos reservados.
+            </p>
+</div>
+</footer>
+<!-- CSS Keyframes for Fade In Animation -->
+<style>
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</body></html>
